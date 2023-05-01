@@ -1,0 +1,795 @@
+{
+	"compiler": {
+		"version": "0.8.18+commit.87f61d96"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "time_rn",
+						"type": "string"
+					},
+					{
+						"internalType": "int256",
+						"name": "status",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "pname",
+						"type": "string"
+					}
+				],
+				"name": "approval",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "bugs_arr",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "bugTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugPriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "time_rn",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "pname",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "status",
+						"type": "bool"
+					}
+				],
+				"name": "deployment",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "features_arr",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "featureTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featureDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featurePriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "time_rn",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "pname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "pdesc",
+						"type": "string"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "bugs",
+						"type": "string[][]"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "features",
+						"type": "string[][]"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "bugsUn",
+						"type": "string[][]"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "featuresUn",
+						"type": "string[][]"
+					}
+				],
+				"name": "fromAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getRequests",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "timeofReport",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "patchName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "patchDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "vno",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "bugTitle",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "bugDescription",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "bugPriority",
+										"type": "string"
+									}
+								],
+								"internalType": "struct bugReport[]",
+								"name": "bugRequest",
+								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "featureTitle",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "featureDescription",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "featurePriority",
+										"type": "string"
+									}
+								],
+								"internalType": "struct featureReport[]",
+								"name": "featureRequest",
+								"type": "tuple[]"
+							},
+							{
+								"internalType": "bool",
+								"name": "deployed",
+								"type": "bool"
+							},
+							{
+								"internalType": "int256",
+								"name": "uploaded",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "approved",
+								"type": "int256"
+							},
+							{
+								"internalType": "string",
+								"name": "filename",
+								"type": "string"
+							},
+							{
+								"internalType": "bytes",
+								"name": "patch",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct listOfBnF[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getfromDev",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "timeofReport",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "patchName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "patchDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "vno",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "bugTitle",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "bugDescription",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "bugPriority",
+										"type": "string"
+									}
+								],
+								"internalType": "struct bugReport[]",
+								"name": "bugRequest",
+								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "featureTitle",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "featureDescription",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "featurePriority",
+										"type": "string"
+									}
+								],
+								"internalType": "struct featureReport[]",
+								"name": "featureRequest",
+								"type": "tuple[]"
+							},
+							{
+								"internalType": "bool",
+								"name": "deployed",
+								"type": "bool"
+							},
+							{
+								"internalType": "int256",
+								"name": "uploaded",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "approved",
+								"type": "int256"
+							},
+							{
+								"internalType": "string",
+								"name": "filename",
+								"type": "string"
+							},
+							{
+								"internalType": "bytes",
+								"name": "patch",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct listOfBnF[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "newPatches",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "timeofReport",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "patchName",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "patchDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "vno",
+								"type": "string"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "bugTitle",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "bugDescription",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "bugPriority",
+										"type": "string"
+									}
+								],
+								"internalType": "struct bugReport[]",
+								"name": "bugRequest",
+								"type": "tuple[]"
+							},
+							{
+								"components": [
+									{
+										"internalType": "string",
+										"name": "featureTitle",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "featureDescription",
+										"type": "string"
+									},
+									{
+										"internalType": "string",
+										"name": "featurePriority",
+										"type": "string"
+									}
+								],
+								"internalType": "struct featureReport[]",
+								"name": "featureRequest",
+								"type": "tuple[]"
+							},
+							{
+								"internalType": "bool",
+								"name": "deployed",
+								"type": "bool"
+							},
+							{
+								"internalType": "int256",
+								"name": "uploaded",
+								"type": "int256"
+							},
+							{
+								"internalType": "int256",
+								"name": "approved",
+								"type": "int256"
+							},
+							{
+								"internalType": "string",
+								"name": "filename",
+								"type": "string"
+							},
+							{
+								"internalType": "bytes",
+								"name": "patch",
+								"type": "bytes"
+							}
+						],
+						"internalType": "struct listOfBnF[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "previousReq",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "bugTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugPriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct bugReport[]",
+						"name": "",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "featureTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featureDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featurePriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct featureReport[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"name": "requests",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "timeofReport",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "patchName",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "patchDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "vno",
+						"type": "string"
+					},
+					{
+						"internalType": "bool",
+						"name": "deployed",
+						"type": "bool"
+					},
+					{
+						"internalType": "int256",
+						"name": "uploaded",
+						"type": "int256"
+					},
+					{
+						"internalType": "int256",
+						"name": "approved",
+						"type": "int256"
+					},
+					{
+						"internalType": "string",
+						"name": "filename",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "patch",
+						"type": "bytes"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "send_list",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "bugTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "bugPriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct bugReport[]",
+						"name": "",
+						"type": "tuple[]"
+					},
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "featureTitle",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featureDescription",
+								"type": "string"
+							},
+							{
+								"internalType": "string",
+								"name": "featurePriority",
+								"type": "string"
+							}
+						],
+						"internalType": "struct featureReport[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "submittedbyadmin",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "time",
+						"type": "string"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "new_b",
+						"type": "string[][]"
+					},
+					{
+						"internalType": "string[][]",
+						"name": "new_f",
+						"type": "string[][]"
+					}
+				],
+				"name": "toAdmin",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "unselectedBugs",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "bugTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "bugPriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "unselectedFeatures",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "featureTitle",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featureDescription",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "featurePriority",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "time_rn",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "pname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ver",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "fileName",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes",
+						"name": "_patch",
+						"type": "bytes"
+					}
+				],
+				"name": "uploadedbyDev",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"complete.sol": "PatchDevelopment"
+		},
+		"evmVersion": "paris",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"complete.sol": {
+			"keccak256": "0xf66f97386e518d9aef29a1afee609e8fb605e575b59e16652ec4a896ffef0d26",
+			"license": "GPL-3.0",
+			"urls": [
+				"bzz-raw://1aaebc8fe7e4035802a9a30aec5a8fb8af6dc9bac40059d437a31bee1f805192",
+				"dweb:/ipfs/QmNgPUgSe8q5oznVDqcQ67aAed4HG7cudGVdReFSEMC7vT"
+			]
+		}
+	},
+	"version": 1
+}
