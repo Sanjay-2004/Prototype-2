@@ -874,7 +874,8 @@ const fromAdmin = async() =>{
 					forDeveloper+=`" data-bs-parent="#accordionExample">
                         <div class="accordion-body">
                         <small>SENT AT: ${temp.timeofReport}</small><br>
-						<div class="container border bg-secondary-subtle">`
+						<div class="container border p-3 my-2">
+						<h5>PATCH DESCRIPTION<br></h5>`
 						for(j in dd){
 							forDeveloper+=`${dd[j]}<br>`
 						}
